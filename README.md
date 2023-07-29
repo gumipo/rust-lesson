@@ -25,3 +25,19 @@ https://crates.io/
 - Stack サイズが決まった変数や配列など
 - Static  const,文字列リテラルの実態
 - Text（コード） 
+
+
+## StackとHeap
+
+Stackのもつデータ
+8byte Heapの先頭アドレス
+8byte Length 
+8byte Capacity   
+
+Heap は日データをの持つ
+
+## 所有権と借用
+let str  = String::from("hello");
+let s = &str  // 借用
+
+所有権はstrのままで借用という形でsからstrを参照できる
