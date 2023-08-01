@@ -41,3 +41,5 @@ let str  = String::from("hello");
 let s = &str  // 借用
 
 所有権はstrのままで借用という形でsからstrを参照できる
+
+Vector型の24バイト
