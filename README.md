@@ -42,4 +42,7 @@ let s = &str  // 借用
 
 所有権はstrのままで借用という形でsからstrを参照できる
 
-Vector型の24バイト
+- Vector型の24バイト Heap領域に入る
+- Box Pointerの使用例
+
+## ライフタイムとダングリングポインタ

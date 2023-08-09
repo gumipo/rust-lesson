@@ -1,5 +1,6 @@
 // mod vars;
-mod stack_heap;
+// mod stack_heap;
+mod ownership;
 
 fn main() {
     // println!("Hello, world!");
@@ -7,5 +8,6 @@ fn main() {
     // vars::sub_a::fnc_a();
     // vars::sub_b::fnc_b();
 
-    stack_heap::run();
+    // stack_heap::run();
+    ownership::run();
 }
