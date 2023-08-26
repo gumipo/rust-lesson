@@ -67,7 +67,23 @@ pub fn run() {
     let r2 = &s10;
     println!("value is: {} {}", r1, r2);
 
-    let mut s10 = String::from("");
+    let mut s11 = String::from("hello");
+    let r1 = &mut s11;
+    // println!("{}", s11); // &mut のリファレンスが有効な場合は読み込みできない
+    // println!("{}", r1);
+    println!("{}", r1);
+    println!("{}", s11); // r１の有効期間が終わりs11にアクセスできる;
+
+    let mut s12 = String::from("hello");
+    let r1 = &s12;
+    let r2 = &s12;
+
+    println!("{} and {}", r1, r2);
+
+    let r3 = &mut s12;
+    *r3 = String::from("hello_world");
+
+    println!("{}", s12);
 }
 
 fn take_oenership(s: String) {
